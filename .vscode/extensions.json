@@ -1,5 +1,9 @@
 {
   "recommendations": [
-
+    "antfu.unocss",
+    "antfu.iconify",
+    "svelte.svelte-vscode",
+    "dbaeumer.vscode-eslint",
+    "YoavBls.pretty-ts-errors"
   ]
 }
