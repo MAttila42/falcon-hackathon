@@ -1,18 +1,18 @@
 export function createLocalStorageStore<T>(key: string, initialValue: T) {
-  let store: T = $state(
+  let value: T = $state(
     JSON.parse(localStorage.getItem(key) || JSON.stringify(initialValue)),
   )
 
   $effect(() => {
-    localStorage.setItem(key, JSON.stringify(store))
+    localStorage.setItem(key, JSON.stringify(value))
   })
 
   return {
     get value() {
-      return store
+      return value
     },
     set value(newValue) {
-      store = newValue
+      value = newValue
     },
   }
 }
