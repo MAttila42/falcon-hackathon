@@ -12,6 +12,7 @@
       !(function () {
         var currentColor = localStorage.getItem("theme") || '"neutral"';
         document.body.classList.add(`theme-${currentColor.slice(1, -1)}`);
+        document.documentElement.classList.add("dark");
       })();
     </script>
 	</body>

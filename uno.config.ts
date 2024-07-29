@@ -30,10 +30,6 @@ export default defineConfig({
     presetAnimations(),
     presetShadcn(builtinColors.map(c => ({ color: c }))),
   ],
-  theme: {
-    colors: {
-    },
-  },
   content: {
     pipeline: {
       include: [
