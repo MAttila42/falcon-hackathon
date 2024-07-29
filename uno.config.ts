@@ -30,6 +30,23 @@ export default defineConfig({
     presetAnimations(),
     presetShadcn(builtinColors.map(c => ({ color: c }))),
   ],
+  preflights: [
+    {
+      getCSS: () => `
+html {
+  padding: 0;
+  margin: 0;
+  height: 100dvh;
+  width: 100dvw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'League Spartan Variable', sans-serif;
+}
+`,
+    },
+  ],
   content: {
     pipeline: {
       include: [
