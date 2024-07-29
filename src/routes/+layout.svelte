@@ -1,15 +1,16 @@
 <script>
   import '@unocss/reset/tailwind.css'
   import 'virtual:uno.css'
-
+  import '@fontsource-variable/league-spartan'
+  import NavLink from '$lib/components/NavLink.svelte'
 </script>
 
-<div class='mt-5 h-screen w-screen flex flex-col items-center gap-10 bg-background text-foreground'>
-  <nav class='flex gap-4'>
-    <h1 class='text-lg font-bold'>Hi Bob</h1>
-    <a href='/'>Home</a>
-    <a href='/learn'>Learn</a>
-    <a href='/settings'>Settings</a>
+<div class='w-full flex flex-col items-center gap-10 bg-background pt-5 text-lg text-foreground'>
+  <nav class='flex items-center gap-5'>
+    <h1 class='text-2xl font-bold'>Yuo</h1>
+    <NavLink href='/'>Home</NavLink>
+    <NavLink href='/learn'>Learn</NavLink>
+    <NavLink href='/settings'>Settings</NavLink>
   </nav>
 
   <main class='flex flex-col gap-5'>
