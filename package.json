@@ -16,12 +16,15 @@
   },
   "dependencies": {
     "@fontsource-variable/league-spartan": "^5.0.20",
+    "@langchain/core": "^0.2.18",
+    "@langchain/openai": "^0.2.5",
     "@unocss/reset": "^0.61.5",
     "bits-ui": "^0.21.12",
     "clsx": "^2.1.1",
     "lucide-svelte": "^0.416.0",
     "tailwind-merge": "^2.4.0",
-    "tailwind-variants": "^0.2.1"
+    "tailwind-variants": "^0.2.1",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.23.2",
