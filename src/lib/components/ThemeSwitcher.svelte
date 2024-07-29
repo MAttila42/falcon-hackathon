@@ -31,10 +31,11 @@
 </script>
 
 <div class='space-y-4'>
-  <p>Color</p>
+  <p>Theme</p>
   <div class='grid grid-cols-6 gap-2'>
     {#each themes as theme}
       <Button
+        class='w-20'
         on:click={() => handleThemeChange(theme)}
         variant={theme === store.value ? 'default' : 'secondary'}
       >

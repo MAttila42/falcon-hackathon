@@ -2,4 +2,6 @@
   import ThemeSwitcher from '$lib/components/ThemeSwitcher.svelte'
 </script>
 
-<ThemeSwitcher />
+<div class='w-fit'>
+  <ThemeSwitcher />
+</div>
